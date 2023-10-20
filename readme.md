@@ -16,4 +16,4 @@ Bấm vào các nút bên phải, file sẽ tự update
 
 File csv mới sẽ đc tạo ra nên ae chỉnh thoải mái, ko sợ ảnh hưởng file gốc
 
-Chỉnh xong rồi thì ae check lại bằng file `app.py` để xem cả video
+Chỉnh xong rồi thì ae check lại bằng file `check.py` để xem cả video
