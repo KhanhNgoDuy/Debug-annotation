@@ -10,7 +10,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 
 
 subject = 's1_Jeremy'
-index = 1
+index = 2
 save_folder = 'New_annotation'
 
 root = Path(f'../dataset/video/{subject}')
@@ -170,12 +170,12 @@ class MainWindow(QMainWindow, Buttons):
 
 
 def put_text(frame, label, idx):
-    idx_color = (255, 0, 0)
+    idx_color = (0, 0, 255)
     if label.lower() in ['change', 'depositpart', 'identification', 'interaction', 'look', 'ok', 'pickpart', 'report']:
-        label_color = (0, 0, 255)
+        label_color = (255, 0, 0)
         label_thickness = 2
     else:
-        label_color = (255, 0, 0)
+        label_color = (0, 0, 255)
         label_thickness = 1
     frame = cv2.resize(frame, dsize=(640, 480))
     frame = cv2.putText(frame, str(idx), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, idx_color, 1, cv2.LINE_AA)
